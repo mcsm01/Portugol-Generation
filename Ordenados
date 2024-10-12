@@ -1,0 +1,49 @@
+programa
+{
+    funcao inicio()
+    {
+        
+        var vetor: vetor[1..10] de inteiro
+        var i, soma: inteiro
+        var media: real
+
+       
+        para i de 1 ate 10 faca
+        {
+            escreva("Digite o número ", i, ": ")
+            leia(vetor[i])
+        }
+
+        
+        enquanto("Elementos nos índices ímpares: ")
+        para i de 1 ate 10 faca
+        {
+            se i % 2 <> 0 entao
+            {
+                enquanto(vetor[i])
+            }
+        }
+
+        
+        enquanto("Elementos que são números pares: ")
+        para i de 1 ate 10 faca
+        {
+            se vetor[i] % 2 = 0 entao
+            {
+                enquanto(vetor[i])
+            }
+        }
+
+        
+        soma <- 0
+        para i de 1 ate 10 faca
+        {
+            soma <- soma + vetor[i]
+        }
+        enquanto("A soma de todos os elementos é: ", soma)
+
+        
+        media <- soma / 10
+        enquanto("A média de todos os elementos é: ", media)
+    }
+}

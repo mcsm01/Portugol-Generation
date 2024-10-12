@@ -1,0 +1,38 @@
+programa
+{
+    funcao inicio()
+    {        
+        var vetor: vetor[1..10] de inteiro
+        var i, j, temp: inteiro
+        
+                vetor[1] <- 2
+        vetor[2] <- 5
+        vetor[3] <- 1
+        vetor[4] <- 3
+        vetor[5] <- 4
+        vetor[6] <- 9
+        vetor[7] <- 7
+        vetor[8] <- 8
+        vetor[9] <- 10
+        vetor[10] <- 6
+
+        para i de 1 ate 9 faca
+        {
+            para j de i+1 ate 10 faca
+            {
+                se vetor[i] < vetor[j] entao
+                {
+                    temp <- vetor[i]
+                    vetor[i] <- vetor[j]
+                    vetor[j] <- temp
+                }
+            }
+        }
+        
+       escreva("Vetor ordenado em ordem decrescente: ")
+        para i de 1 ate 10 faca
+        {
+            escreva(vetor[i], " ")
+        }
+    }
+}
